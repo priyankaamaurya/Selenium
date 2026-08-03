@@ -48,15 +48,21 @@ public class Amazon {
         		System.out.println(name);
         		
         		try {
+        			
         			allAddToCartButton.get(pointer).click();
+        			
         		} catch (Exception e) {
+        			
         			driver.findElement(By.xpath("(//button[@aria-label='Close'])[2]")).click();
+        			
         		}
         		
         	}
         	
         	pointer++;
         }
+        
+        Thread.sleep(5000);
         
         driver.quit();
         
