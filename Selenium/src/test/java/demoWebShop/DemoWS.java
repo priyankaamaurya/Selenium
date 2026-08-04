@@ -1,5 +1,7 @@
 package demoWebShop;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -8,53 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DemoWS {
 	
-//	public static void main(String[] args) throws InterruptedException{
-//		
-//		WebDriver driver = new ChromeDriver();
-//		
-//		driver.manage().window().maximize();
-//		
-//		driver.get("https://www.amazon.in/");
-//		
-//		WebElement element = driver.findElement(By.id("twotabsearchtextbox"));
-//		
-//		Thread.sleep(3000);
-//		
-//		element.sendKeys("Apple Mobile");
-//		
-//		Thread.sleep(2000);
-//
-//		element.sendKeys(Keys.CONTROL, "a");
-//		
-//		Thread.sleep(2000);
-//		
-//		element.sendKeys(Keys.CONTROL, "x");
-//		
-//		Thread.sleep(2000);
-//		
-//		element.sendKeys("Iphone");
-//		
-//		Thread.sleep(2000);
-//		
-//		element.sendKeys(Keys.BACK_SPACE);
-//		
-//		Thread.sleep(2000);
-//		
-//		element.sendKeys(Keys.CONTROL, "v");
-//		
-//		Thread.sleep(2000);
-//		
-//		element.sendKeys(Keys.ENTER);
-//
-//		Thread.sleep(2000);
-//		
-//		driver.quit();
-//
-//
-//		
-//	}
+	public static void main(String[] args) throws InterruptedException {
 	
-public static void main(String[] args) throws InterruptedException {
         
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.amazon.in/");
@@ -82,9 +39,25 @@ public static void main(String[] args) throws InterruptedException {
       search.sendKeys(Keys.ARROW_DOWN);
       search.sendKeys(Keys.ENTER);
       
+      String id = driver.getWindowHandle();
+      System.out.println(id);
+      
       driver.findElement(By.xpath("//span[contains(text(), 'iPhone 17 Pro Max 1 TB: ')]")).click();
+      
+      Set<String> ids = driver.getWindowHandles();
+      
+      for(String str:ids) {
+    	  if(!str.equals(id)) {
+    		  driver.switchTo().window(str);
+    		  System.out.println(str);
+    	  }
+      }
+      
+      Thread.sleep(5000);
+      System.out.println(driver.getCurrentUrl());
+      driver.findElement(By.xpath("//div[@id='a-accordion-auto-6']//input[@id='add-to-cart-button']")).click();
 
-
+      
         //driver.quit();
     }
 
