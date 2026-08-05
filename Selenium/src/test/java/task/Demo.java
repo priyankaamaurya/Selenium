@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Demo {
@@ -21,17 +22,20 @@ public class Demo {
 		c.submit();
 		
 		WebElement p = driver.findElement(By.id("products-orderby"));
-		p.click();
-		
 		Select sel = new Select(p);
-		sel.selectByContainsVisibleText("Name: A to Z");
-		
+		sel.selectByVisibleText("Name: A to Z");
+
+		p = driver.findElement(By.id("products-orderby"));
+		sel = new Select(p);
+		sel.selectByVisibleText("Name: Z to A");
+				
 		WebElement d = driver.findElement(By.id("products-pagesize"));
-		d.click();
-		
 		Select sel1 = new Select(d);
-		sel.selectByContainsVisibleText("4");
+		sel1.selectByContainsVisibleText("4");
 		
+		d = driver.findElement(By.id("products-pagesize"));
+		sel1 = new Select(d);
+		sel1.selectByContainsVisibleText("4");
 		
 	}
 
