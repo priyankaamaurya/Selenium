@@ -17,7 +17,6 @@ public class MakeMyTrip {
 		driver.get("https://www.amazon.in/");
 		
 		Thread.sleep(3000);
-		
 				
 		Actions action = new Actions(driver);
 		
