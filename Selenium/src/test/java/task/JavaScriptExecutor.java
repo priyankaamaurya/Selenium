@@ -12,11 +12,14 @@ public class JavaScriptExecutor {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("https://www.amazon.com");
+//		driver.get("https://www.amazon.com");
 		
-		Thread.sleep(3000);
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeScript("window.location.assign('https://www.amazon.com')");
+		
+		Thread.sleep(3000);
 		
 		js.executeScript("document.getElementById('twotabsearchtextbox').value='mobiles';");
 		
@@ -37,6 +40,9 @@ public class JavaScriptExecutor {
 		js.executeScript("document.getElementById('add-to-cart-button').click()");
 		
 		System.out.println("Product added to cart");
+		
+		driver.quit();
+
 	}
 
 } 
