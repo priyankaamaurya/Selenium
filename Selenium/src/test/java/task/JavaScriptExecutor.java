@@ -10,10 +10,7 @@ public class JavaScriptExecutor {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.manage().window().maximize();
-		
-//		driver.get("https://www.amazon.com");
-		
+		driver.manage().window().maximize();		
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
