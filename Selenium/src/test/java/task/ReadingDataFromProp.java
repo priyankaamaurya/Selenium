@@ -23,7 +23,6 @@ public class ReadingDataFromProp {
 		System.out.println(email);
 		System.out.println(password);
 		
-		System.out.println("Print");
 	}
 
 }
