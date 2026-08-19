@@ -11,7 +11,7 @@ public class Irctc {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("");		
+		driver.get("https://www.irctc.co.in/nget/");		
 	
 	}
 }
