@@ -30,6 +30,8 @@ public class VisibilityOfElement {
 		WebElement product = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//h2[@class='a-size-medium a-spacing-none a-color-base a-text-normal'])[1]")));
 		
 		System.out.println(product.getText());
+		
+		driver.quit();
 	}
 
 }
