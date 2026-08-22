@@ -1,7 +1,9 @@
 package task;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -28,9 +30,6 @@ public class ReadingDataFromProp {
 		String password = prop.getProperty("password");
 		
 		System.out.println(browser);
-//		System.out.println(url);
-//		System.out.println(email);
-//		System.out.println(password);
 		
 		switch (browser) {
 		
@@ -51,10 +50,13 @@ public class ReadingDataFromProp {
 			break;
 		
 		}
-		
+		 
 		driver.manage().window().maximize();
 		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		
 		Thread.sleep(3000);
+		
 		driver.get(url);
 		
 		driver.findElement(By.id("_R_1h6kqsqppb6amH1_")).sendKeys(email);
@@ -62,6 +64,18 @@ public class ReadingDataFromProp {
 		driver.findElement(By.id("_R_1hmkqsqppb6amH1_")).sendKeys(password);
 		
 		driver.findElement(By.xpath("//span[text()='Log in']")).click();
+		
+		Thread.sleep(3000);
+		
+		String errorMsg = driver.findElement(By.xpath("//*[name()='svg' and @class='x1lliihq x2lah0s x1k90msu x2h7rmj x1qfuztq x1a1m0xk xlup9mm x1kky2od']/../..")).getText(); 
+		
+		FileOutputStream fileOutput = new FileOutputStream("src/test/resources/Facebook.properties");
+		
+		prop.setProperty("errorMsg", errorMsg);
+		
+		prop.store(fileOutput, "Facebook Login");
+		
+		fileOutput.close();
 	}
 
 }
