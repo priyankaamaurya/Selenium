@@ -82,6 +82,7 @@ public class ReadingDataFromProp {
 		prop.store(fileOutput, "Facebook Login");
 		
 		fileOutput.close();
+		
 	}
 
 }
