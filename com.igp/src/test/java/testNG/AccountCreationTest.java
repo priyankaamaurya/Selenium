@@ -15,11 +15,15 @@ public class AccountCreationTest {
 		Reporter.log("Deleted", true);				
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 4)
 	public void updateAccount() {
-		Reporter.log("Updated", false);				
+		Reporter.log("Updated", true);				
 	}
 	
+	@Test(priority = 3)
+	public void fetchAcc() {
+		Reporter.log("Updated", true);				
+	}
 
 }
 
