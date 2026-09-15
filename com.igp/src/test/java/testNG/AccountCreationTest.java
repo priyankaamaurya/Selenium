@@ -15,7 +15,7 @@ public class AccountCreationTest {
 		Reporter.log("Deleted", true);				
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void updateAccount() {
 		Reporter.log("Updated", true);				
 	}
