@@ -19,11 +19,6 @@ public class AccountCreationTest {
 	public void updateAccount() {
 		Reporter.log("Updated", true);				
 	}
-	
-	@Test(priority = 3)
-	public void fetchAcc() {
-		Reporter.log("Updated", true);				
-	}
 
 }
 
