@@ -7,17 +7,17 @@ public class AccountCreationTest {
 	
 	@Test(priority = 2)
 	public void createAcc() {
-		Reporter.log("Created", true);				
+		Reporter.log("Account Created", true);				
 	}
 	
 	@Test(priority = 1)
 	public void deleteAcc() {
-		Reporter.log("Deleted", true);				
+		Reporter.log("Account Deleted", true);				
 	}
 	
 	@Test(priority = 3)
 	public void updateAcc() {
-		Reporter.log("Updated", true);				
+		Reporter.log("Account Updated", true);				
 	}
 
 }
