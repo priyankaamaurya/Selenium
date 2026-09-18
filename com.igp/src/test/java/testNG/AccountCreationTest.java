@@ -17,7 +17,7 @@ public class AccountCreationTest {
 	
 	@Test(priority = 3)
 	public void updateAcc() {
-		Reporter.log("Account Updated", true);				
+		Reporter.log("Account Updated", false);				
 	}
 
 }
