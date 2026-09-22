@@ -12,7 +12,7 @@ public class AccountCreationTest {
 	
 	@Test(priority = 1)
 	public void deleteAcc() {
-		Reporter.log("Account Deleted", false);				
+		Reporter.log("Account Deleted", true);				
 	}
 	
 	@Test(priority = 3)
