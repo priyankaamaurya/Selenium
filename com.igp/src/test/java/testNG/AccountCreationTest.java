@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 public class AccountCreationTest {
 	
 	@Test(priority = 2)
-	public void createAcc() {
+	public void create() {
 		Reporter.log("Account Created", true);				
 	}
 	
 	@Test(priority = 1)
-	public void deleteAcc() {
+	public void delete() {
 		Reporter.log("Account Deleted", true);				
 	}
 	
