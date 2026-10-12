@@ -10,12 +10,12 @@ public class AccountCreationTest {
 		Reporter.log("Account Created", true);				
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void deleteAcc() {
 		Reporter.log("Account Deleted", true);				
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void updateAcc() {
 		Reporter.log("Account Updated", true);				
 	}
