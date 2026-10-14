@@ -7,7 +7,7 @@ public class AccountCreationTest {
 	
 	@Test(priority = 1)
 	public void createAcc() {
-		Reporter.log("Account Created", true);				
+		Reporter.log("Account Created", false);				
 	}
 	
 	@Test(priority = 3)
