@@ -18,7 +18,7 @@ public class Zepto {
 		driver.findElement(By.xpath("//span[text() = 'Search for']")).sendKeys("Sunflower oil");
 //		driver.findElement(By.xpath("//img[@class='relative overflow-hidden min-h-[148px] min-w-[100px]']"));
 		
-		
+		driver.quit();
 	}
 
 }
