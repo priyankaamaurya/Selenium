@@ -11,9 +11,7 @@ public class Zepto {
 	public static void main(String[] args) throws InterruptedException{
 		
 		WebDriver driver = new ChromeDriver();
-		
-//		WebDriver dr = new EdgeDriver();
-		
+				
 		driver.manage().window().maximize();
 
 		driver.get("https://www.zepto.com");
