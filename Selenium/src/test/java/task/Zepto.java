@@ -12,7 +12,7 @@ public class Zepto {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		WebDriver dr = new EdgeDriver();
+//		WebDriver dr = new EdgeDriver();
 		
 		driver.manage().window().maximize();
 
