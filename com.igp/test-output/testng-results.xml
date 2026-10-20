@@ -1,42 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Account Created]]>
-    </line>
     <line>
       <![CDATA[Account Updated]]>
     </line>
-    <line>
-      <![CDATA[Account Deleted]]>
-    </line>
   </reporter-output>
-  <suite started-at="2026-10-13T19:21:37 IST" name="Default suite" finished-at="2026-10-13T19:21:37 IST" duration-ms="179">
+  <suite started-at="2026-10-20T21:43:44 IST" name="Default suite" finished-at="2026-10-20T21:43:44 IST" duration-ms="98">
     <groups>
     </groups>
-    <test started-at="2026-10-13T19:21:37 IST" name="Default test" finished-at="2026-10-13T19:21:37 IST" duration-ms="179">
+    <test started-at="2026-10-20T21:43:44 IST" name="Default test" finished-at="2026-10-20T21:43:44 IST" duration-ms="98">
       <class name="testNG.AccountCreationTest">
-        <test-method signature="createAcc()[pri:1, instance:testNG.AccountCreationTest@313ac989]" started-at="2026-10-13T19:21:37 IST" name="createAcc" finished-at="2026-10-13T19:21:37 IST" duration-ms="18" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Account Created]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- createAcc -->
-        <test-method signature="updateAcc()[pri:2, instance:testNG.AccountCreationTest@313ac989]" started-at="2026-10-13T19:21:37 IST" name="updateAcc" finished-at="2026-10-13T19:21:37 IST" duration-ms="25" status="PASS">
+        <test-method signature="updateAccount()[pri:2, instance:testNG.AccountCreationTest@6302bbb1]" started-at="2026-10-20T21:43:44 IST" name="updateAccount" finished-at="2026-10-20T21:43:44 IST" duration-ms="16" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Account Updated]]>
             </line>
           </reporter-output>
-        </test-method> <!-- updateAcc -->
-        <test-method signature="deleteAcc()[pri:3, instance:testNG.AccountCreationTest@313ac989]" started-at="2026-10-13T19:21:37 IST" name="deleteAcc" finished-at="2026-10-13T19:21:37 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Account Deleted]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- deleteAcc -->
+        </test-method> <!-- updateAccount -->
       </class> <!-- testNG.AccountCreationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
