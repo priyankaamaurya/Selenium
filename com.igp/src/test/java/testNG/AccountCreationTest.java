@@ -10,7 +10,7 @@ public class AccountCreationTest {
 		Reporter.log("Account Created", true);				
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void deleteAccount() {
 		Reporter.log("Account Deleted", true);				
 	}
@@ -18,6 +18,11 @@ public class AccountCreationTest {
 	@Test(priority = 2)
 	public void updateAccount() {
 		Reporter.log("Account Updated", true);			
+	}
+	
+	@Test(priority = 3)
+	public void Account() {
+		Reporter.log("Account", true);			
 	}
 
 }
