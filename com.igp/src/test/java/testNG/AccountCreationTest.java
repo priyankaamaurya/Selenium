@@ -20,7 +20,6 @@ public class AccountCreationTest {
 		Reporter.log("Account Updated", true);			
 	}
 	
-	@Test(priority = 3)
 	public void Account() {
 		Reporter.log("Account", true);			
 	}
