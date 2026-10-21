@@ -20,7 +20,7 @@ public class AccountCreationTest {
 		Reporter.log("Account Updated", true);			
 	}
 	
-	public void Account() {
+	public void Acc() {
 		Reporter.log("Account", true);			
 	}
 
